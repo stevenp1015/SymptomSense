@@ -13,7 +13,7 @@ class GeminiService {
   GeminiService() {
     // In a real app, you'd get the API key from a secure source.
     // _apiKey = const String.fromEnvironment('GEMINI_API_KEY', defaultValue: _geminiApiKeyPlaceholder);
-    if (_geminiApiKeyPlaceholder == "YOUR_GEMINI_API_KEY_HERE" && kDebugMode) {
+    if (_geminiApiKeyPlaceholder == "AIzaSyCrEmqyQhpjkjP1I4HHfEYpEyyLGvfTZnE" && kDebugMode) {
       print("GeminiService: API Key is a placeholder. Real API calls will not work.");
     }
   }
