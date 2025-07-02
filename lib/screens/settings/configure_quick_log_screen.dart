@@ -7,6 +7,7 @@ import 'dart:convert'; // For JSON encoding/decoding
 import 'package:myapp/screens/settings/manage_medications_screen.dart' show mockUserMedicationsProvider;
 import 'package:myapp/screens/settings/manage_user_defined_list_screen.dart' show userDefinedListProvider;
 import 'package:myapp/data/data_model.dart';
+import 'package:myapp/services/widget_service.dart'; // Moved import to top
 
 
 // --- Data Structure for a Quick Log Button Configuration ---
@@ -45,16 +46,7 @@ final quickLogConfigProvider = StateNotifierProvider<QuickLogConfigNotifier, Lis
   return QuickLogConfigNotifier(ref, List.generate(5, (_) => null));
 });
 
-class QuickLogConfigNotifier extends StateNotifier<List<QuickLogConfigItem?>> {
-  final Ref _ref;
-import 'package:myapp/services/widget_service.dart'; // Import WidgetService
-
-// --- Provider for Quick Log Configuration ---
-const String quickLogConfigKey = 'quickLogConfiguration';
-final quickLogConfigProvider = StateNotifierProvider<QuickLogConfigNotifier, List<QuickLogConfigItem?>>((ref) {
-  // Max 5 quick log buttons for MVP
-  return QuickLogConfigNotifier(ref, List.generate(5, (_) => null)); // Pass ref
-});
+// Removed duplicated/misplaced import and provider definitions that were here.
 
 class QuickLogConfigNotifier extends StateNotifier<List<QuickLogConfigItem?>> {
   final Ref _ref;
