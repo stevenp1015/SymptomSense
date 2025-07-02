@@ -50,8 +50,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  analyzer: ^5.13.0 # Reverted to suggested compatible version
   isar: ^3.1.0+1
-  isar_flutter_libs: ^3.1.0+1 # Added this line
+  isar_flutter_libs: ^3.1.0+1
   isar_generator: ^3.1.0+1
   build_runner: ^2.4.13
 

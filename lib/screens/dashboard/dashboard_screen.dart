@@ -11,6 +11,11 @@ import 'package:myapp/screens/logging/sleep_log_screen.dart';
 import 'package:myapp/screens/logging/food_log_screen.dart';
 // Import settings hub to navigate if no quick logs are set up
 import 'package:myapp/screens/settings/settings_hub_screen.dart';
+// Importing history screens
+import 'package:myapp/screens/history/chronological_history_screen.dart';
+import 'package:myapp/screens/history/calendar_history_screen.dart';
+// Importing insights screen
+import 'package:myapp/screens/insights/insights_screen.dart';
 
 
 class DashboardScreen extends ConsumerWidget {
@@ -238,9 +243,3 @@ class DashboardScreen extends ConsumerWidget {
     );
   }
 }
-
-// Importing history screens
-import 'package:myapp/screens/history/chronological_history_screen.dart';
-import 'package:myapp/screens/history/calendar_history_screen.dart';
-// Importing insights screen
-import 'package:myapp/screens/insights/insights_screen.dart';

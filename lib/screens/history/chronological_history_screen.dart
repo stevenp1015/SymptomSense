@@ -223,8 +223,7 @@ class ChronologicalHistoryScreen extends ConsumerWidget {
                     onPressed: () => _navigateToEditScreen(context, ref, event),
                   ),
                   onTap: () => _navigateToEditScreen(context, ref, event),
-                  },
-                );
+                ); // Removed extra comma/brace here
               },
             ),
     );
